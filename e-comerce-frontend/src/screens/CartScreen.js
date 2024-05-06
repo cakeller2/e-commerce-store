@@ -43,7 +43,6 @@ const CartScreen = () => {
   if (loginInfo.loading) return <h1>Loading.....</h1>;
   else if (!loginInfo.loading && loginInfo.isLogin)
     return (
-      <>
         <div className="cartscreen">
           <div className="cartscreen__left">
             <h2>Shopping Cart</h2>
@@ -79,7 +78,6 @@ const CartScreen = () => {
             </div>
           </div>
         </div>
-      </>
     );
 };
 

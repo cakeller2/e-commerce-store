@@ -24,25 +24,27 @@ const HomeScreen = () => {
   }, [dispatch])
 
   return (
-    <div className="homescreen">
-      <h2 className="homescreen__title">Latest Products</h2>
-      <div className="homescreen__products">
-        {loading ? (
-          <h2>Loading...</h2>
-        ) : error ? (
-          <h2>{error}</h2>
-        ) : (
-          products.map(product => (
-            <Product
-              key={product._id}
-              name={product.name}
-              description={product.description}
-              price={product.price}
-              imageUrl={product.imageUrl}
-              productId={product._id}
-            />
-          ))
-        )}
+  <div className="homescreen">
+    <h2 className="homescreen__title">Latest Products</h2>
+    <div className="homescreen__products">
+    if (loading) {
+      content = <h2>Loading...</h2>
+    } else if (error) {
+      content = <h2>{error}</h2>
+    } else {
+      content = products.map(product => (
+    <Product
+      key={product._id}
+      name={product.name}
+      description={product.description}
+      price={product.price}
+      imageUrl={product.imageUrl}
+      productId={product._id}
+    />
+  ))
+}
+
+return content;
       </div>
     </div>
   )

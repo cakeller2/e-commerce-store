@@ -24,7 +24,6 @@ const ProductScreen = ({match, history}) => {
     if (user.userInfo.isLogin) {
       dispatch(addToCart(product._id, qty))
       history.push(`/cart`)
-      return
     } else {
       alert('You need to first login.')
     }
@@ -51,17 +50,17 @@ const ProductScreen = ({match, history}) => {
           <div className="productscreen__right">
             <div className="right__info">
               <p>
-                Price:
+                Price:{' '}
                 <span>${product.price}</span>
               </p>
               <p>
-                Status:
+                Status:{' '}
                 <span>
                   {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
                 </span>
               </p>
               <p>
-                Qty
+                Qty:{' '}
                 <select value={qty} onChange={e => setQty(e.target.value)}>
                   {[...Array(product.countInStock).keys()].map(x => (
                     <option key={x + 1} value={x + 1}>

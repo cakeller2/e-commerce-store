@@ -41,7 +41,7 @@ function Index() {
               // backgroundColor: 'red',
             }}
           >
-            <div style={{cursor: 'pointer'}} input type="button" tabIndex="0" onClick={() => push('/')} onKeyDown={(e) => { if (e.key === 'Enter') push('/') }}>
+            <div style={{cursor: 'pointer'}} inputType="button" onClick={() => push('/')} onKeyDown={(e) => { if (e.key === 'Enter') push('/') }}>
               <i className="fas fa-arrow-circle-left fa-5x"></i>
             </div>
             <p>Signup</p>

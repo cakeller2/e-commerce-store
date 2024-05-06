@@ -57,8 +57,7 @@ function Index() {
             name="email"
             placeholder="Your email.."
             value={email}
-            onChange={e => setEmail(e.target.value)}
-          />
+            onChange={e => setEmail(e.target.value)}/>
           Email
           </label>
           <label htmlFor="password">
@@ -68,8 +67,7 @@ function Index() {
             name="password"
             placeholder="Your Password.."
             value={password}
-            onChange={e => setPassword(e.target.value)}
-          />
+            onChange={e => setPassword(e.target.value)}/>
           Password
           </label>
 

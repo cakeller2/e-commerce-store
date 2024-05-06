@@ -54,8 +54,8 @@ function Index() {
             name="firstname"
             placeholder="Your full name.."
             value={fullName}
-            onChange={e => setFullName(e.target.value)}/>
-            Full Name</label>
+            onChange={e => setFullName(e.target.value)}/>{/*
+          */}Full Name</label>
 
           <label htmlFor="email">
           <input
@@ -64,17 +64,17 @@ function Index() {
             name="email"
             placeholder="Your email.."
             value={email}
-            onChange={e => setEmail(e.target.value)}/>
-            Email</label>
-          <label for="password">
+            onChange={e => setEmail(e.target.value)}/>{/*
+          */}Email</label>
+          <label htmlFor="password">
           <input
             type="password"
             id="lname"
             name="password"
             placeholder="Your Password.."
             value={password}
-            onChange={e => setPassword(e.target.value)}/>
-            Password</label>
+            onChange={e => setPassword(e.target.value)}/>{/*
+          */}Password</label>
 
           <Link to="/signin" className="link">
             <span>Already have an account ?</span>

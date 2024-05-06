@@ -83,4 +83,9 @@ const ProductScreen = ({match, history}) => {
   )
 }
 
+ProductScreen.propTypes = {
+  match: PropTypes.any.isRequired,
+  history: PropTypes.any.isRequired,
+}
+
 export default ProductScreen

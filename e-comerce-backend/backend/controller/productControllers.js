@@ -62,8 +62,6 @@ const products = [
   },
 ];
 
-
-
 const getProducts = async (req, res) => {
   try {
     //const productsFromDB = await Product.find({});

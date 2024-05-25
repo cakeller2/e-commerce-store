@@ -13,7 +13,7 @@ const signUpUser = async (req, res) => {
     //await User.create({...req.body, password: hash})
     
     usersDb.push({email: email, fullName: fullName, password: hash})
-    res.status(201).send('Sucessfully account opened ')
+    res.status(201).send('Sucessfully account opened')
     return
   } catch (err) {
     console.log('Eorror : ', err)
@@ -40,9 +40,7 @@ const signInUser = async (req, res) => {
       res.status(200).send({status: 'ok', token})
       return
     }
-    
     sendResponseError(400, 'InValid password !', res)
-
   } catch (err) {
     console.log('EROR', err)
     sendResponseError(500, `Error ${err}`, res)
@@ -66,5 +64,4 @@ const getUsers = async (req, res) => {
 function findElementByProperty(array, property, value) {
   return array.find(element => element[property] === value);
 }
-
 module.exports = {signUpUser, signInUser, getUser, getUsers}

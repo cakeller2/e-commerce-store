@@ -1,12 +1,14 @@
 const Cart = require('../models/Cart')
 const cartDb = require('../data/cartDb')
+let correctCarts = []
 
 const getCartProducts = async (req, res) => {
   try {
    // const carts = await Cart.find({userId: req.user._id}).populate('productId')
    const conditionFn = element => element.userId === req.user.email;
-   const carts = findElementsByCondition(cartDb, conditionFn )
-    res.status(200).send({status: 'ok', carts})
+    const carts = findAndDelete(cartDb);
+    const updatedCarts = findElementsByCondition(carts, conditionFn);
+    res.status(200).send({status: 'ok', updatedCarts})
   } catch (err) {
     console.log(err)
     sendResponseError(500, `Error ${err}`, res)
@@ -15,7 +17,7 @@ const getCartProducts = async (req, res) => {
 // This logic is a bit fuzzy because it appears that it is going to find any cart and update it
 // It is not clear in how it will find the "correct" cart
  const addProductInCart = async (req, res) => {
-  const {productId, count} = req.body
+  const {cartId, userId, productId, count} = req.body
   try {
     //const cart = await Cart.findOneAndUpdate(
     //  {productId},
@@ -23,14 +25,15 @@ const getCartProducts = async (req, res) => {
     //  {upsert: true},
     //)
 
-  const updateFn = item => ({ count: count});
+    //const updateFn = item => ({ count: count});
 
-  const updatedCollection = findAndUpdate(cartDb, 'productId', productId, updateFn);
+    //const updatedCollection = findAndUpdate(cartDb, 'productId', productId, updateFn);
 
+    cartDb.push({cartId: cartId, userId: userId, productId: productId, count: count});
     const conditionFn = element => element.userId === req.user.email;
-    const carts = findElementsByCondition(cartDb, conditionFn )
-    
-    res.status(201).send({status: 'ok', carts})
+    const carts = findAndDelete(cartDb);
+    const updatedCarts = findElementsByCondition(carts, conditionFn);
+    res.status(201).send({status: 'ok', updatedCarts})
   } catch (err) {
     console.log(err)
     sendResponseError(500, `Error ${err}`, res)
@@ -38,21 +41,25 @@ const getCartProducts = async (req, res) => {
 }
 const deleteProductInCart = async (req, res) => {
   try {
-    await Cart.findByIdAndRemove(req.params.id)
-    res.status(200).send({status: 'ok'})
-  } catch (e) {
+    //await Cart.findByIdAndRemove(req.params.id)
+    const conditionFn = element => element.cartId != req.params.id;
+    correctCarts.push(req.params.id);
+    const carts = findAndDelete(cartDb);
+    const updatedCarts = findElementsByCondition(carts, conditionFn);
+    res.status(200).send({status: 'ok', updatedCarts})
+  } catch (err) {
     console.log(err)
     sendResponseError(500, `Error ${err}`, res)
   }
 }
 
-function findAndUpdate(collection, property, value, updateFn) {
-  return collection.map(item => {
-    if (item[property] === value) {
-      return { ...item, ...updateFn(item) };
-    }
-      return item;
-  });
+
+function findAndDelete(array) {
+  let final = array
+  for (let i = 0; i < correctCarts.length; i++) {
+    final = final.filter(element => element.cartId != correctCarts[i]);
+  }
+  return final
 }
 
 function findElementsByCondition(array, conditionFn) {

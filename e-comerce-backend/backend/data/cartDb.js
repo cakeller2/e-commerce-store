@@ -12,4 +12,4 @@ const cartCollection = [
     count: "10",
 }]
 
-  module.exports = cartCollection;
+module.exports = cartCollection;

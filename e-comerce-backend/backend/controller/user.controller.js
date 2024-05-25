@@ -66,4 +66,5 @@ const getUsers = async (req, res) => {
 function findElementByProperty(array, property, value) {
   return array.find(element => element[property] === value);
 }
+
 module.exports = {signUpUser, signInUser, getUser, getUsers}

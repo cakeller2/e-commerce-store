@@ -2,7 +2,6 @@ const products = require("../data/products")
 
 const getProducts = async (req, res) => {
   try {
-    //const productsFromDB = await Product.find({});
     res.json(products);
   } catch (error) {
     console.error(error);
@@ -12,7 +11,6 @@ const getProducts = async (req, res) => {
 
 const getProductById = async (req, res) => {
   try {
-    // const product = await Product.findById(req.params.id);
     const product = findElementByProperty(products, 'id', req.params.id);
     res.json(product);
   } catch (error) {

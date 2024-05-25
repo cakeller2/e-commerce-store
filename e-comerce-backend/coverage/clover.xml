@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716656021531" clover="3.2.0">
-  <project timestamp="1716656021531" name="All files">
-    <metrics statements="180" coveredstatements="153" conditionals="20" coveredconditionals="9" methods="34" coveredmethods="32" elements="234" coveredelements="194" complexity="0" loc="180" ncloc="180" packages="7" files="18" classes="18"/>
+<coverage generated="1716657120044" clover="3.2.0">
+  <project timestamp="1716657120045" name="All files">
+    <metrics statements="169" coveredstatements="142" conditionals="20" coveredconditionals="9" methods="34" coveredmethods="32" elements="223" coveredelements="183" complexity="0" loc="169" ncloc="169" packages="7" files="16" classes="16"/>
     <package name="config">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
       <file name="config.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\config\config.js">
@@ -11,105 +11,102 @@
       </file>
     </package>
     <package name="controller">
-      <metrics statements="90" coveredstatements="72" conditionals="4" coveredconditionals="2" methods="20" coveredmethods="19"/>
+      <metrics statements="87" coveredstatements="69" conditionals="4" coveredconditionals="2" methods="20" coveredmethods="19"/>
       <file name="cart.controller.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\controller\cart.controller.js">
-        <metrics statements="37" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="9"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="58" count="3" type="stmt"/>
-        <line num="59" count="3" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
-        <line num="62" count="3" type="stmt"/>
-        <line num="66" count="3" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="73" count="1" type="stmt"/>
-      </file>
-      <file name="productControllers.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\controller\productControllers.js">
-        <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <metrics statements="36" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="9"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="26" count="12" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-      </file>
-      <file name="user.controller.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\controller\user.controller.js">
-        <metrics statements="38" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+      </file>
+      <file name="productControllers.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\controller\productControllers.js">
+        <metrics statements="14" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="user.controller.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\controller\user.controller.js">
+        <metrics statements="37" coveredstatements="30" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="32" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="38" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
         <line num="39" count="2" type="stmt"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="50" count="2" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="57" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="65" count="4" type="stmt"/>
-        <line num="67" count="2" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
       </file>
     </package>
     <package name="data">
@@ -162,21 +159,7 @@
       </file>
     </package>
     <package name="models">
-      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Cart.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\models\Cart.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-      </file>
-      <file name="Product.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\models\Product.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-      </file>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="User.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\models\User.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="stmt"/>
@@ -190,12 +173,12 @@
       <file name="cartRoutes.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\routes\cartRoutes.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="productRoutes.js" path="C:\Users\16103\Downloads\Quinnipiac-2023-2024\Spring-Semester\SER330\e-commerce-store-updated\e-commerce-store-updated\e-comerce-backend\backend\routes\productRoutes.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

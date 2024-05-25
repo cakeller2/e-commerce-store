@@ -1,19 +1,16 @@
 const request = require('supertest');
 const express = require('express')
-const routes = require('../routes/productRoutes.js');
 const products = require('../data/products.js')  
-const baseURL = 'http://localhost:3000/'
 const productRoute = '/api/products'
 
 const app = express();
-const router  = express.Router(); 
 
 // Middleware to parse JSON requests
 app.use(express.json());
 
 require('../routes/routesProductsApp.js')(app);
 
-describe('Testing Products API', () => {
+describe('Products API', () => {
   test('GET /api/products', async () => { // all products
     const response = await request(app).get(productRoute);
     expect(response.status).toBe(200);

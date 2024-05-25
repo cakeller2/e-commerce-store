@@ -1,4 +1,3 @@
-const Cart = require('../models/Cart')
 const cartDb = require('../data/cartDb')
 let correctCarts = []
 
@@ -24,9 +23,7 @@ const getCartProducts = async (req, res) => {
     //  {productId, count, userId: req.user._id},
     //  {upsert: true},
     //)
-
     //const updateFn = item => ({ count: count});
-
     //const updatedCollection = findAndUpdate(cartDb, 'productId', productId, updateFn);
 
     cartDb.push({cartId: cartId, userId: userId, productId: productId, count: count});
@@ -52,7 +49,6 @@ const deleteProductInCart = async (req, res) => {
     sendResponseError(500, `Error ${err}`, res)
   }
 }
-
 
 function findAndDelete(array) {
   let final = array

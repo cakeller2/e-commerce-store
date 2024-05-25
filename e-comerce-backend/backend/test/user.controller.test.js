@@ -1,12 +1,9 @@
 const request = require('supertest');
 const express = require('express')
-const routes = require('../routes/userRoutes.js');
 const users = require('../data/usersDb.js') 
-const baseURL = 'http://localhost:3000/';
 const userRoute = '/api/user';
 
 const app = express();
-const router  = express.Router(); 
 
 // Middleware to parse JSON requests
 app.use(express.json());

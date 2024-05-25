@@ -18,14 +18,6 @@ const getCartProducts = async (req, res) => {
  const addProductInCart = async (req, res) => {
   const {cartId, userId, productId, count} = req.body
   try {
-    //const cart = await Cart.findOneAndUpdate(
-    //  {productId},
-    //  {productId, count, userId: req.user._id},
-    //  {upsert: true},
-    //)
-    //const updateFn = item => ({ count: count});
-    //const updatedCollection = findAndUpdate(cartDb, 'productId', productId, updateFn);
-
     cartDb.push({cartId: cartId, userId: userId, productId: productId, count: count});
     const conditionFn = element => element.userId === req.user.email;
     const carts = findAndDelete(cartDb);
@@ -52,7 +44,7 @@ const deleteProductInCart = async (req, res) => {
 
 function findAndDelete(array) {
   let final = array
-  for (let i = 0; i < correctCarts.length; i++) {
+  for (const i of final) {
     final = final.filter(element => element.cartId != correctCarts[i]);
   }
   return final

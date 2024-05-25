@@ -27,7 +27,7 @@ const signInUser = async (req, res) => {
     // const user = await User.findOne({email})
     const user = findElementByProperty(usersDb, 'email', email);
 
-    if (!!!user) {
+    if (!user) {
       sendResponseError(400, 'You have to Sign up first !', res)
     }
 

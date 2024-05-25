@@ -20,7 +20,6 @@ describe('Test User Routes', () => {
     const response = await request(app).get(userRoute)
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual(users);
-    //expect(Array.isArray(response.body)).toBe(true);
   });
 
   test('POST /api/user/signup', async () => { // Sign Up User

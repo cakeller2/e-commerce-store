@@ -46,7 +46,7 @@ const deleteProductInCart = async (req, res) => {
     correctCarts.push(req.params.id);
     const carts = findAndDelete(cartDb);
     const updatedCarts = findElementsByCondition(carts, conditionFn);
-    res.status(200).send({status: 'ok', updatedCarts})
+    res.status(200).send({status: 'ok', updatedCarts, correctCarts})
   } catch (err) {
     console.log(err)
     sendResponseError(500, `Error ${err}`, res)
@@ -66,4 +66,8 @@ function findElementsByCondition(array, conditionFn) {
   return array.filter(conditionFn);
 }
 
-module.exports = {addProductInCart, deleteProductInCart, getCartProducts}
+function getCorrectCarts(){
+  return correctCarts;
+}
+
+module.exports = {addProductInCart, deleteProductInCart, getCartProducts, getCorrectCarts}
